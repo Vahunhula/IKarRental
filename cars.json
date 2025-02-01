@@ -1,0 +1,156 @@
+{
+    "0": {
+        "id": 0,
+        "brand": "Honda",
+        "model": "Civic",
+        "year": 2019,
+        "transmission": "Manual",
+        "fuel_type": "Petrol",
+        "passengers": 5,
+        "daily_price_huf": 16250,
+        "image": "https:\/\/media.ed.edmunds-media.com\/honda\/civic\/2019\/oem\/2019_honda_civic_sedan_touring_fq_oem_1_815.jpg"
+    },
+    "3": {
+        "id": 3,
+        "brand": "Subaru",
+        "model": "Impreza",
+        "year": 2012,
+        "transmission": "Automatic",
+        "fuel_type": "Petrol",
+        "passengers": 5,
+        "daily_price_huf": 12000,
+        "image": "https:\/\/media.ed.edmunds-media.com\/subaru\/impreza\/2022\/oem\/2022_subaru_impreza_4dr-hatchback_limited_fq_oem_1_815.jpg"
+    },
+    "5": {
+        "id": "5",
+        "brand": "Tesla",
+        "model": "Model S",
+        "year": 2023,
+        "fuel_type": "Electric",
+        "passengers": 5,
+        "daily_price_huf": 45000,
+        "transmission": "Automatic",
+        "image": "https:\/\/media.ed.edmunds-media.com\/tesla\/model-s\/2021\/oem\/2021_tesla_model-s_sedan_plaid_fq_oem_1_815.jpg"
+    },
+    "6": {
+        "id": 6,
+        "brand": "Toyota",
+        "model": "Highlander",
+        "year": 2020,
+        "transmission": "Automatic",
+        "fuel_type": "Petrol",
+        "passengers": 7,
+        "daily_price_huf": 20000,
+        "image": "https:\/\/media.ed.edmunds-media.com\/toyota\/highlander\/2020\/oem\/2020_toyota_highlander_4dr-suv_platinum_fq_oem_1_815.jpg"
+    },
+    "7": {
+        "id": 7,
+        "brand": "Chevrolet",
+        "model": "Suburban",
+        "year": 2021,
+        "transmission": "Automatic",
+        "fuel_type": "Petrol",
+        "passengers": 8,
+        "daily_price_huf": 24000,
+        "image": "https:\/\/media.ed.edmunds-media.com\/chevrolet\/suburban\/2021\/oem\/2021_chevrolet_suburban_4dr-suv_high-country_fq_oem_1_815.jpg"
+    },
+    "8": {
+        "id": 8,
+        "brand": "Rivian",
+        "model": "R1T",
+        "year": 2022,
+        "transmission": "Automatic",
+        "fuel_type": "Electric",
+        "passengers": 5,
+        "daily_price_huf": 40000,
+        "image": "https:\/\/media.ed.edmunds-media.com\/rivian\/r1t\/2022\/oem\/2022_rivian_r1t_crew-cab-pickup_launch-edition_fq_oem_1_815.jpg"
+    },
+    "9": {
+        "id": 9,
+        "brand": "Tesla",
+        "model": "Model X",
+        "year": 2022,
+        "transmission": "Automatic",
+        "fuel_type": "Electric",
+        "passengers": 7,
+        "daily_price_huf": 48000,
+        "image": "https:\/\/media.ed.edmunds-media.com\/tesla\/model-x\/2024\/oem\/2024_tesla_model-x_4dr-suv_plaid_fq_oem_1_815.jpg"
+    },
+    "10": {
+        "id": 10,
+        "brand": "BMW",
+        "model": "AMG GT",
+        "year": 2021,
+        "transmission": "Automatic",
+        "fuel_type": "Petrol",
+        "passengers": 4,
+        "daily_price_huf": 35000,
+        "image": "https:\/\/images.pexels.com\/photos\/170811\/pexels-photo-170811.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+    },
+    "11": {
+        "id": 11,
+        "brand": "BMW",
+        "model": "M5",
+        "year": 2005,
+        "fuel_type": "Petrol",
+        "passengers": 5,
+        "daily_price_huf": 20000,
+        "transmission": "Manual",
+        "image": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/9\/9e\/BMW_M5_E39_%28Blue%29.jpg"
+    },
+    "12": {
+        "id": 12,
+        "brand": "MAZDA",
+        "model": "RX8",
+        "year": 2008,
+        "fuel_type": "Methan",
+        "passengers": 4,
+        "daily_price_huf": 50000,
+        "transmission": "Manual",
+        "image": "https:\/\/i.pinimg.com\/736x\/e8\/df\/6a\/e8df6a0bd694a9a13ef2907023e93d22.jpg"
+    },
+    "13": {
+        "id": 13,
+        "brand": "Alfa Romeo",
+        "model": "GT",
+        "year": 1992,
+        "fuel_type": "Petrol",
+        "passengers": 2,
+        "daily_price_huf": 100000,
+        "transmission": "Manual",
+        "image": "https:\/\/www.cityam.com\/wp-content\/uploads\/2023\/08\/001-Totem-Automobili-GT-.jpg?resize=900,506"
+    },
+    "14": {
+        "id": 14,
+        "brand": "Lancia",
+        "model": "EVO37",
+        "year": 1980,
+        "fuel_type": "Petrol",
+        "passengers": 2,
+        "daily_price_huf": 200000,
+        "transmission": "Manual",
+        "image": "https:\/\/cdn.auto.it\/img\/1200\/675\/2022\/04\/02\/153449381-af70d58c-1cb1-456f-b6b8-50f9540ca41f.jpg"
+    },
+    "15": {
+        "id": 15,
+        "brand": "BMW",
+        "model": "Isetta",
+        "year": 1955,
+        "fuel_type": "Petrol",
+        "passengers": 1,
+        "daily_price_huf": 100,
+        "transmission": "Manual",
+        "image": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/c\/c3\/BMW_Isetta_BW_2018-07-15_12-42-13.jpg"
+    },
+    "16": {
+        "id": 16,
+        "brand": "Benz",
+        "model": "Motowagen",
+        "year": 1886,
+        "fuel_type": "Petrol",
+        "passengers": 2,
+        "daily_price_huf": 80000,
+        "transmission": "Manual",
+        "image": "https:\/\/group.mercedes-benz.com\/bilder\/konzern\/tradition\/geschichte\/anfaenge-des-automobils\/benz-patent-motorwagen-w1680xh945-cutout.png"
+    }
+}

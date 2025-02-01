@@ -1,0 +1,16 @@
+{
+    "678539ff65557": {
+        "id": "678539ff65557",
+        "full_name": "admin",
+        "email": "admin@ikarrental.hu",
+        "password": "$2y$10$9BpPBZ5TQXINDq1GF0Kghu.AXCEEeZ3g0QGG.WLxp6PICwAeMZzE2",
+        "is_admin": 1
+    },
+    "67864d4c01cfe": {
+        "id": "67864d4c01cfe",
+        "full_name": "Vakho Sheklashvili",
+        "email": "vaxosheylashvili21@gmail.com",
+        "password": "$2y$10$U4\/aokAQ9\/I8FREwHrwSs.xAswwRpg\/tPDDBDPwMwkVXsmV7NJKdC",
+        "is_admin": 0
+    }
+}

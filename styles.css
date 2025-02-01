@@ -1,0 +1,1559 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #121212;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+    color: white;
+}
+
+nav .nav-left a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav .nav-right {
+    display: flex;
+    align-items: center;
+}
+
+nav .nav-right a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+    font-size: 1rem;
+}
+
+nav .nav-right a.btn-link {
+    color: #FFC107;
+}
+
+nav .nav-right a.btn-yellow {
+    background-color: #FFC107;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+nav .nav-right a.btn-yellow:hover {
+    background-color: #FFA000;
+}
+
+nav .nav-right .profile-picture {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 15px;
+}
+
+.btn-yellow {
+    background-color: #FFC107;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    color: #121212;
+}
+
+.btn-link {
+    color: white;
+}
+
+.hero {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+.filters {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin: 3px 0;
+    background-color: #1E1E1E;
+    padding: 2px;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.filter-box {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #333;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.filter-box label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.filter-box input,
+.filter-box select,
+.filter-box button {
+    background-color: #444;
+    color: white;
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.filter-box button {
+    cursor: pointer;
+}
+
+.filter-box button:hover {
+    background-color: #555;
+}
+
+.price-inputs,
+.date-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.price-inputs label,
+.date-inputs label {
+    font-weight: bold;
+}
+
+.car-listings {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+    width: 100%;
+}
+
+.car-card {
+    background-color: #1E1E1E;
+    border-radius: 15px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.car-card:hover {
+    transform: translateY(-10px);
+}
+
+.car-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.car-card:hover img {
+    transform: scale(1.05);
+}
+
+.car-details {
+    padding: 20px;
+}
+
+.price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: -45px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 5px 10px;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+.price-inputs {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.price-inputs label {
+    font-weight: bold;
+}
+
+.price-inputs input {
+    width: 100px;
+    padding: 5px;
+    font-size: 16px;
+}
+
+.car-details-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #1E1E1E;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.car-details-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.car-details-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.car-details-container p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.car-details-container .btn-yellow {
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.registration-container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #1E1E1E;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.registration-container h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.registration-container .errors {
+    background-color: #FF6F61;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.registration-container .errors p {
+    margin: 0;
+}
+
+.registration-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.registration-container label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.registration-container input[type="text"],
+.registration-container input[type="email"],
+.registration-container input[type="password"],
+.registration-container input[type="date"] {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.registration-container input[type="checkbox"] {
+    margin-bottom: 20px;
+}
+
+.registration-container button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    background-color: #FFC107;
+    color: #121212;
+    cursor: pointer;
+}
+
+.registration-container button:hover {
+    background-color: #FFA000;
+}
+
+.admin-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #1E1E1E;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.admin-container h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.admin-container table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.admin-container th, .admin-container td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #444;
+}
+
+.admin-container th {
+    background-color: #333;
+}
+
+.admin-container td {
+    background-color: #1E1E1E;
+}
+
+.admin-container .btn-yellow {
+    padding: 5px 10px;
+    font-size: 0.9rem;
+    border-radius: 10px;
+}
+
+.add-car-container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #1E1E1E;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.add-car-container h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.add-car-container .errors {
+    background-color: #FF6F61;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.add-car-container .errors p {
+    margin: 0;
+}
+
+.add-car-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.add-car-container label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.add-car-container input[type="text"],
+.add-car-container input[type="number"],
+.add-car-container input[type="url"],
+.add-car-container select {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.add-car-container button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    background-color: #FFC107;
+    color: #121212;
+    cursor: pointer;
+}
+
+.add-car-container button:hover {
+    background-color: #FFA000;
+}
+
+.login-container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #1E1E1E;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.login-container h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.login-container .errors {
+    background-color: #FF6F61;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.login-container .errors p {
+    margin: 0;
+}
+
+.login-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-container label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.login-container input[type="email"],
+.login-container input[type="password"] {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.login-container button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    background-color: #FFC107;
+    color: #121212;
+    cursor: pointer;
+}
+
+.login-container button:hover {
+    background-color: #FFA000;
+}
+
+.profile-container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #1E1E1E;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.profile-container h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.profile-container .profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.profile-container .profile-picture:hover {
+    transform: scale(1.1);
+}
+
+.profile-container .errors {
+    background-color: #FF6F61;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.profile-container .errors p {
+    margin: 0;
+}
+
+.profile-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-container label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.profile-container input[type="file"] {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.profile-container button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    background-color: #FFC107;
+    color: #121212;
+    cursor: pointer;
+}
+
+.profile-container button:hover {
+    background-color: #FFA000;
+}
+
+.nav-right .profile-picture {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 15px;
+}
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+.modal-content {
+    background-color: #1E1E1E;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+    max-width: 400px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.success-message {
+    color: green;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.error-message {
+    color: red;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.message-container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #1E1E1E;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.message-container h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.message-container p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.message-container .btn-yellow {
+    margin-top: 20px;
+}
+
+@media (max-width: 1200px) {
+    .car-listings {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+}
+
+@media (max-width: 992px) {
+    .car-listings {
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    }
+
+    .car-card img {
+        height: 150px;
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-right a {
+        font-size: 0.9rem;
+    }
+
+    .car-listings {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+
+    .car-card img {
+        height: 130px;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .filters {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .price-inputs input {
+        width: 80px;
+    }
+
+    .car-details-container {
+        padding: 15px;
+    }
+
+    .registration-container,
+    .admin-container,
+    .add-car-container,
+    .login-container,
+    .profile-container,
+    .message-container {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .nav .nav-left a {
+        font-size: 1.2rem;
+    }
+
+    .nav .nav-right a {
+        font-size: 0.8rem;
+    }
+
+    .car-listings {
+        grid-template-columns: 1fr;
+    }
+
+    .car-card img {
+        height: 100px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .filters {
+        gap: 5px;
+    }
+
+    .price-inputs input {
+        width: 60px;
+    }
+
+    .car-details-container,
+    .registration-container,
+    .admin-container,
+    .add-car-container,
+    .login-container,
+    .profile-container,
+    .message-container {
+        padding: 10px;
+    }
+}
+
+.admin-menu {
+    position: relative;
+    display: inline-block;
+}
+
+.admin-menu-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.admin-menu-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.admin-menu-content a, .admin-menu-content button {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.admin-menu-content a:hover, .admin-menu-content button:hover {
+    background-color: #575757;
+}
+
+.admin-menu:hover .admin-menu-content {
+    display: block;
+}
+ .delete-icon {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: red;
+            color: white;
+            border-radius: 50%;
+            width: 25px;
+            height: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            cursor: pointer;
+            display: none; /* Hidden by default */
+        }
+        .car-card {
+            position: relative;
+        }
+        .edit-mode .delete-icon {
+            display: flex; /* Visible in edit mode */
+        }
+        body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #121212;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+    color: white;
+}
+
+nav .nav-left a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav .nav-right {
+    display: flex;
+    align-items: center;
+}
+
+nav .nav-right a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+    font-size: 1rem;
+}
+
+nav .nav-right a.btn-link {
+    color: #FFC107;
+}
+
+nav .nav-right a.btn-yellow {
+    background-color: #FFC107;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+nav .nav-right a.btn-yellow:hover {
+    background-color: #FFA000;
+}
+
+nav .nav-right .profile-picture {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 15px;
+}
+
+.btn-yellow {
+    background-color: #FFC107;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    color: #121212;
+}
+
+.btn-link {
+    color: white;
+}
+
+.hero {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+.filters {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin: 3px 0;
+    background-color: #1E1E1E;
+    padding: 2px;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.filter-box {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #333;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.filter-box label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.filter-box input,
+.filter-box select,
+.filter-box button {
+    background-color: #444;
+    color: white;
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.filter-box button {
+    cursor: pointer;
+}
+
+.filter-box button:hover {
+    background-color: #555;
+}
+
+.price-inputs,
+.date-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.price-inputs label,
+.date-inputs label {
+    font-weight: bold;
+}
+
+.car-listings {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+    width: 100%;
+}
+
+.car-card {
+    background-color: #1E1E1E;
+    border-radius: 15px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.car-card:hover {
+    transform: translateY(-10px);
+}
+
+.car-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.car-card:hover img {
+    transform: scale(1.05);
+}
+
+.car-details {
+    padding: 20px;
+}
+
+.price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: -45px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 5px 10px;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+.price-inputs {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.price-inputs label {
+    font-weight: bold;
+}
+
+.price-inputs input {
+    width: 100px;
+    padding: 5px;
+    font-size: 16px;
+}
+
+.car-details-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #1E1E1E;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.car-details-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.car-details-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.car-details-container p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.car-details-container .btn-yellow {
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.registration-container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #1E1E1E;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.registration-container h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.registration-container .errors {
+    background-color: #FF6F61;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.registration-container .errors p {
+    margin: 0;
+}
+
+.registration-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.registration-container label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.registration-container input[type="text"],
+.registration-container input[type="email"],
+.registration-container input[type="password"],
+.registration-container input[type="date"] {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.registration-container input[type="checkbox"] {
+    margin-bottom: 20px;
+}
+
+.registration-container button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    background-color: #FFC107;
+    color: #121212;
+    cursor: pointer;
+}
+
+.registration-container button:hover {
+    background-color: #FFA000;
+}
+
+.admin-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #1E1E1E;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.admin-container h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.admin-container table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.admin-container th, .admin-container td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #444;
+}
+
+.admin-container th {
+    background-color: #333;
+}
+
+.admin-container td {
+    background-color: #1E1E1E;
+}
+
+.admin-container .btn-yellow {
+    padding: 5px 10px;
+    font-size: 0.9rem;
+    border-radius: 10px;
+}
+
+.add-car-container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #1E1E1E;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.add-car-container h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.add-car-container .errors {
+    background-color: #FF6F61;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.add-car-container .errors p {
+    margin: 0;
+}
+
+.add-car-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.add-car-container label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.add-car-container input[type="text"],
+.add-car-container input[type="number"],
+.add-car-container input[type="url"],
+.add-car-container select {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.add-car-container button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    background-color: #FFC107;
+    color: #121212;
+    cursor: pointer;
+}
+
+.add-car-container button:hover {
+    background-color: #FFA000;
+}
+
+.login-container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #1E1E1E;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.login-container h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.login-container .errors {
+    background-color: #FF6F61;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.login-container .errors p {
+    margin: 0;
+}
+
+.login-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-container label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.login-container input[type="email"],
+.login-container input[type="password"] {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.login-container button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    background-color: #FFC107;
+    color: #121212;
+    cursor: pointer;
+}
+
+.login-container button:hover {
+    background-color: #FFA000;
+}
+
+.profile-container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #1E1E1E;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.profile-container h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.profile-container .profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.profile-container .profile-picture:hover {
+    transform: scale(1.1);
+}
+
+.profile-container .errors {
+    background-color: #FF6F61;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.profile-container .errors p {
+    margin: 0;
+}
+
+.profile-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-container label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.profile-container input[type="file"] {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.profile-container button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    background-color: #FFC107;
+    color: #121212;
+    cursor: pointer;
+}
+
+.profile-container button:hover {
+    background-color: #FFA000;
+}
+
+.nav-right .profile-picture {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 15px;
+}
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+.modal-content {
+    background-color: #1E1E1E;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+    max-width: 400px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.success-message {
+    color: green;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.error-message {
+    color: red;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.message-container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #1E1E1E;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.message-container h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.message-container p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.message-container .btn-yellow {
+    margin-top: 20px;
+}
+
+@media (max-width: 1200px) {
+    .car-listings {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+}
+
+@media (max-width: 992px) {
+    .car-listings {
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    }
+
+    .car-card img {
+        height: 150px;
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-right a {
+        font-size: 0.9rem;
+    }
+
+    .car-listings {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+
+    .car-card img {
+        height: 130px;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .filters {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .price-inputs input {
+        width: 80px;
+    }
+
+    .car-details-container {
+        padding: 15px;
+    }
+
+    .registration-container,
+    .admin-container,
+    .add-car-container,
+    .login-container,
+    .profile-container,
+    .message-container {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .nav .nav-left a {
+        font-size: 1.2rem;
+    }
+
+    .nav .nav-right a {
+        font-size: 0.8rem;
+    }
+
+    .car-listings {
+        grid-template-columns: 1fr;
+    }
+
+    .car-card img {
+        height: 100px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .filters {
+        gap: 5px;
+    }
+
+    .price-inputs input {
+        width: 60px;
+    }
+
+    .car-details-container,
+    .registration-container,
+    .admin-container,
+    .add-car-container,
+    .login-container,
+    .profile-container,
+    .message-container {
+        padding: 10px;
+    }
+}
+
+.admin-menu {
+    position: relative;
+    display: inline-block;
+}
+
+.admin-menu-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.admin-menu-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.admin-menu-content a, .admin-menu-content button {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.admin-menu-content a:hover, .admin-menu-content button:hover {
+    background-color: #575757;
+}
+
+.admin-menu:hover .admin-menu-content {
+    display: block;
+}
+ .small-btn {
+    padding: 5px 10px;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.btn-link.small-btn {
+    background-color: #FFC107;
+    color: #121212;
+    text-decoration: none;
+}
+
+.btn-link.small-btn:hover {
+    background-color: #FFA000;
+}
+.nav-right .profile-picture {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 15px;
+    vertical-align: middle;
+}
+
+.nav-right span {
+    vertical-align: middle;
+    margin-left: 5px;
+    position: relative;
+    top: 0px;
+}
+
+.nav-right .btn-link,
+.nav-right .btn-yellow {
+    margin-left: 15px;
+}
